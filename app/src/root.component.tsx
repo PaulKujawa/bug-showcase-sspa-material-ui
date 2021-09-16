@@ -1,9 +1,9 @@
 import React from "react";
-import { Button } from "@material-ui/core";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-import Chip from "@material-ui/core/Chip";
+import { Button } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
+import Chip from "@mui/material/Chip";
 
-const customTheme = createMuiTheme({
+const customTheme = createTheme({
   palette: {
     primary: {
       light: "#cce4ff",

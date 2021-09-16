@@ -13,6 +13,6 @@ module.exports = (webpackConfigEnv, argv) => {
     devServer: {
       https: true,
     },
-    externals: [/^@material-ui\/core$/],
+    externals: [/^@mui\/material$/],
   });
 };
