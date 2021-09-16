@@ -12,3 +12,5 @@ Now, one component is loaded as in-browser module while the other is loaded from
 ## To run / see the visuals
 
 run `npm install && npm start` in both folders. Open https://localhost:8080/pkujawa-demo-app.js to make sure your browser does not block the server running on HTTPS without a certificate. Now, open http://localhost:9000/ and you should see two components using different themes. 
+
+<img width="388" alt="Screenshot 2021-09-16 at 18 23 01" src="https://user-images.githubusercontent.com/2843557/133652304-0b687cac-f65d-4efb-a758-2b873807e252.png">
