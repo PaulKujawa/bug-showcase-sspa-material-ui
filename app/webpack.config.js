@@ -13,6 +13,6 @@ module.exports = (webpackConfigEnv, argv) => {
     devServer: {
       https: true,
     },
-    externals: [/^@mui\/material$/],
+    externals: ["@pkujawa/components-library"],
   });
 };

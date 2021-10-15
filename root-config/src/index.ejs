@@ -31,6 +31,7 @@
 
     More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
   -->
+  
   <script type="systemjs-importmap">
     {
       "imports": {
@@ -41,6 +42,8 @@
       }
     }
   </script>
+  
+  
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
   <!-- Add your organization's prod import map URL to this script's src  -->
@@ -51,7 +54,8 @@
     {
       "imports": {
         "@single-spa/welcome": "https://localhost:8080/pkujawa-demo-app.js",
-        "@pkujawa/root-config": "//localhost:9000/pkujawa-root-config.js"
+        "@pkujawa/root-config": "//localhost:9000/pkujawa-root-config.js",
+        "@pkujawa/components-library": "https://localhost:8090/main.js"
       }
     }
   </script>

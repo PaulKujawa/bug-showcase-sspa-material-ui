@@ -1,27 +1,21 @@
 import React from "react";
-import { Button } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material";
-import Chip from "@mui/material/Chip";
+import { Box, ThemeProvider } from "@pkujawa/components-library";
+import { ThemeProvider as ThemeProviderNpm } from "../../component-library/src/ThemeProvider";
+import { Button } from "./Button";
 
-const customTheme = createTheme({
-  palette: {
-    primary: {
-      light: "#cce4ff",
-      main: "#07f",
-      dark: "#0037FF",
-    },
-  },
-});
+const CustomTheme = { primary: "CadetBlue" };
 
-export default function Root(props) {
+export default function Root() {
   return (
     <section>
-      <ThemeProvider theme={customTheme}>
-        <Button color="primary" variant="contained">
-          from browser
-        </Button>
+      <ThemeProvider theme={CustomTheme}>
+        <Box />
 
-        <Chip label="Dqw" color="primary" />
+        <div style={{ marginBottom: "2rem" }} />
+
+        <ThemeProviderNpm theme={CustomTheme}>
+          <Button />
+        </ThemeProviderNpm>
       </ThemeProvider>
     </section>
   );

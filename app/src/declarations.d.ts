@@ -1,3 +1,5 @@
+declare module "@pkujawa/components-library";
+
 declare module "*.html" {
   const rawHtmlFile: string;
   export = rawHtmlFile;
